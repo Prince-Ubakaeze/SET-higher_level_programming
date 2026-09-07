@@ -1,7 +1,4 @@
-# JavaScript warm up
-
-Solutions for tasks 0–8 in `SET-higher_level_programming`, in the directory
-`0x12-javascript-warm_up`.
+# JavaScript
 
 ## Requirements
 
