@@ -10,4 +10,3 @@ Solutions for tasks 0–8 in `SET-higher_level_programming`, in the directory
 - JavaScript scripts start with `#!/usr/bin/node`, end with a newline and
   are executable.
 - Use `vi`, `vim` or `emacs` if editing the scripts manually.
-
