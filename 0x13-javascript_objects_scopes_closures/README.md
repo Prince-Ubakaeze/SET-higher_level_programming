@@ -1,81 +1,62 @@
-# JavaScript - Objects, Scopes and Closures
+# JavaScript - Objects, Scopes and Closures Part 2
 
-Repository: `SET-higher_level_programming`
-
-Project directory: `0x13-javascript_objects_scopes_closures`
-
-These exercises use JavaScript classes, constructors, instance attributes,
-methods, and inheritance. Each JavaScript file exports its class using
-CommonJS so that another file can load it with `require()`.
-
-## Requirements
-
-- Ubuntu 20.04 LTS with Node.js 14.x.
-- JavaScript style: semistandard 16.x.x.
-- Every JavaScript file starts with `#!/usr/bin/node`, ends with a newline,
-  and is executable.
+This directory contains solutions for the Week 4 graded JavaScript project
+on objects, scopes, closures, callbacks, mapping, dictionaries, and file I/O.
 
 ## Tasks
 
-| Task | File | Description |
-| --- | --- | --- |
-| 0. Rectangle #0 | `0-rectangle.js` | Exports an empty `Rectangle` class. |
-| 1. Rectangle #1 | `1-rectangle.js` | Initializes `width` and `height` from the constructor arguments. |
-| 2. Rectangle #2 | `2-rectangle.js` | Sets dimensions only when both are positive integers. |
-| 3. Rectangle #3 | `3-rectangle.js` | Adds `print()` to display rows of `X` characters. |
-| 4. Rectangle #4 | `4-rectangle.js` | Adds `rotate()` to swap dimensions and `double()` to double them. |
-| 5. Square #0 | `5-square.js` | Extends the rectangle from task 4 using `super(size, size)`. |
-| 6. Square #1 | `6-square.js` | Extends the square from task 5 and adds `charPrint(c)`, defaulting to `X` when `c` is undefined. |
+### 0. Occurrences
+**File:** `7-occurrences.js`
 
-For tasks 2 through 4, invalid dimensions leave the instance without `width`
-or `height` properties. Squares inherit this validation.
+Exports `nbOccurences(list, searchElement)`, which returns the number of times
+`searchElement` occurs in `list`.
 
-## Try a rectangle
+### 1. Esrever
+**File:** `8-esrever.js`
 
-Run from this project directory:
+Exports `esrever(list)`, which returns a new list in reverse order without
+using JavaScript's built-in `reverse()` method.
 
-```bash
-node - <<'JS'
-const Rectangle = require('./4-rectangle');
-const rectangle = new Rectangle(2, 3);
-console.log('Normal:');
-rectangle.print();
-console.log('Double:');
-rectangle.double();
-rectangle.print();
-console.log('Rotate:');
-rectangle.rotate();
-rectangle.print();
-JS
-```
+### 2. Log me
+**File:** `9-logme.js`
 
-## Try a square
+Exports `logMe(item)`, which prints the number of arguments previously printed
+followed by the current argument.
 
-```bash
-node - <<'JS'
-const Square = require('./6-square');
-const square = new Square(4);
-square.charPrint();
-square.charPrint('C');
-JS
-```
+### 3. Number conversion
+**File:** `10-converter.js`
 
-Running a class file directly produces no output; load the class and call
-its methods as shown above.
+Exports `converter(base)`, which returns a function that converts a base-10
+number to the specified base.
 
-## Check style and file permissions
+### 4. Factor index
+**File:** `100-map.js`
 
-If semistandard 16.x is installed:
+Imports `list` from `100-data.js`, uses `map()` to multiply each value by its
+index, and prints both the original and transformed lists.
+
+### 5. Sorted occurrences
+**File:** `101-sorted.js`
+
+Imports `dict` from `101-data.js` and creates a new dictionary where each key
+is an occurrence count and each value is a list of user IDs with that count.
+
+### 6. Concat files
+**File:** `102-concat.js`
+
+Concatenates the contents of two source files into a destination file.
+
+Usage:
 
 ```bash
-semistandard *.js
+./102-concat.js fileA fileB fileC
 ```
 
-To inspect Git's recorded permissions and file lengths:
+## Repository
 
-```bash
-git ls-files --stage -- '*.js'
-wc -l *.js
-```
+- Repository: `SET-higher_level_programming`
+- Directory: `0x13-javascript_objects_scopes_closures`
 
-The Git mode for each JavaScript file should be `100755`.
+## Environment
+
+The scripts are written for Node.js and use the `#!/usr/bin/node` shebang.
