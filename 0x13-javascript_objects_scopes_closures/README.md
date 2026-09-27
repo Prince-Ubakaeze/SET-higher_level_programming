@@ -56,7 +56,3 @@ Usage:
 
 - Repository: `SET-higher_level_programming`
 - Directory: `0x13-javascript_objects_scopes_closures`
-
-## Environment
-
-The scripts are written for Node.js and use the `#!/usr/bin/node` shebang.
