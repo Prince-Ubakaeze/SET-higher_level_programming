@@ -20,7 +20,7 @@ function printCharacters (characters, index) {
   });
 }
 
-request({ url: url, json: true }, function (error, response, body) {
+request({ url, json: true }, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
